@@ -329,6 +329,95 @@ SpriteAtlas:
   - {fileID: 1330675158, guid: 1d59a3bd5e6a2084794b915a0e666d7d, type: 3}
   - {fileID: -1818367478, guid: 1d59a3bd5e6a2084794b915a0e666d7d, type: 3}
   - {fileID: -425304322, guid: 1d59a3bd5e6a2084794b915a0e666d7d, type: 3}
+  - {fileID: 305072631, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1650269868, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1924741359, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -490701238, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1169253104, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -456870490, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -468938876, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1422235344, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 986590902, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -220932771, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1590002584, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1297196304, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -914034975, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 907947454, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -296670291, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -549327300, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -487164086, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1556540740, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1788145548, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -944364017, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -49342912, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -390256432, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1624630078, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -273384677, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1786824083, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1033325067, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 46120114, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -232335499, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 503076923, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1332522312, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1856606155, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 814126713, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -887480039, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1066962898, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 2109016961, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -628099679, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1462454395, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 502600773, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1350462888, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 24120231, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -580759478, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1166784048, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -227582435, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1099949471, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1684281819, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1447371905, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1718758900, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -151516105, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -974075218, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 525832603, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1212745381, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -743117186, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 2054744018, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -533996103, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -699850000, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 512972206, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1260608511, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 308175668, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -518489272, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -2042430230, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1531912541, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 729630737, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -2019375733, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1505937107, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1238833703, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -218866748, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 883540073, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -746040297, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1061064606, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1675884627, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 67289698, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1581389889, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -95582531, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 2030855647, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1838799690, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1945148344, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 882521530, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1396269342, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -1572173400, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -833257822, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 664094762, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1089756026, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 378819199, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -568686974, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -389961369, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -460657884, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -2050090498, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: 1936606735, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -826363973, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
   m_PackedSpriteNamesToIndex:
   - Tileset 5_18
   - Tileset 5_19
@@ -609,6 +698,95 @@ SpriteAtlas:
   - Tileset 1_28
   - Tileset 1_33
   - Tileset 1_30
+  - pacman entity sprites_74
+  - pacman entity sprites_75
+  - pacman entity sprites_76
+  - pacman entity sprites_77
+  - pacman entity sprites_67
+  - pacman entity sprites_70
+  - pacman entity sprites_66
+  - pacman entity sprites_71
+  - pacman entity sprites_65
+  - pacman entity sprites_72
+  - pacman entity sprites_64
+  - pacman entity sprites_73
+  - pacman entity sprites_63
+  - pacman entity sprites_62
+  - pacman entity sprites_61
+  - pacman entity sprites_60
+  - pacman entity sprites_78
+  - pacman entity sprites_79
+  - pacman entity sprites_9
+  - pacman entity sprites_8
+  - pacman entity sprites_69
+  - pacman entity sprites_68
+  - pacman entity sprites_3
+  - pacman entity sprites_2
+  - pacman entity sprites_1
+  - pacman entity sprites_0
+  - pacman entity sprites_7
+  - pacman entity sprites_6
+  - pacman entity sprites_5
+  - pacman entity sprites_4
+  - pacman entity sprites_38
+  - pacman entity sprites_39
+  - pacman entity sprites_88
+  - pacman entity sprites_58
+  - pacman entity sprites_29
+  - pacman entity sprites_59
+  - pacman entity sprites_28
+  - pacman entity sprites_30
+  - pacman entity sprites_81
+  - pacman entity sprites_31
+  - pacman entity sprites_49
+  - pacman entity sprites_80
+  - pacman entity sprites_32
+  - pacman entity sprites_52
+  - pacman entity sprites_48
+  - pacman entity sprites_83
+  - pacman entity sprites_33
+  - pacman entity sprites_23
+  - pacman entity sprites_53
+  - pacman entity sprites_82
+  - pacman entity sprites_34
+  - pacman entity sprites_22
+  - pacman entity sprites_18
+  - pacman entity sprites_50
+  - pacman entity sprites_85
+  - pacman entity sprites_35
+  - pacman entity sprites_21
+  - pacman entity sprites_19
+  - pacman entity sprites_51
+  - pacman entity sprites_45
+  - pacman entity sprites_84
+  - pacman entity sprites_36
+  - pacman entity sprites_20
+  - pacman entity sprites_16
+  - pacman entity sprites_56
+  - pacman entity sprites_44
+  - pacman entity sprites_87
+  - pacman entity sprites_37
+  - pacman entity sprites_27
+  - pacman entity sprites_17
+  - pacman entity sprites_57
+  - pacman entity sprites_47
+  - pacman entity sprites_86
+  - pacman entity sprites_26
+  - pacman entity sprites_14
+  - pacman entity sprites_54
+  - pacman entity sprites_46
+  - pacman entity sprites_25
+  - pacman entity sprites_15
+  - pacman entity sprites_55
+  - pacman entity sprites_41
+  - pacman entity sprites_24
+  - pacman entity sprites_12
+  - pacman entity sprites_40
+  - pacman entity sprites_13
+  - pacman entity sprites_43
+  - pacman entity sprites_10
+  - pacman entity sprites_42
+  - pacman entity sprites_11
   m_RenderDataMap: {}
   m_Tag: Sprite Atlas
   m_IsVariant: 0

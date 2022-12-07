@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8129694289609430952}
   - component: {fileID: 7724702335171619451}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blinky
   m_TagString: Untagged
   m_Icon: {fileID: 0}

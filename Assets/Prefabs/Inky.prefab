@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7687906894843069991}
   - component: {fileID: 767369569152654558}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Inky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
