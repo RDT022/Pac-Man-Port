@@ -4,11 +4,9 @@ using UnityEngine;
 
 abstract public class Collectible : MonoBehaviour
 {
-    [SerializeField]
-    int pointValue;
+    public int pointValue;
 
-    [SerializeField]
-    GameManager gm;
+    public GameManager gm;
 
     public abstract void OnTriggerEnter2D(Collider2D collider); 
 

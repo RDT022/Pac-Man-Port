@@ -360,6 +360,7 @@ SpriteAtlas:
   - {fileID: 503076923, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
   - {fileID: -1332522312, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
   - {fileID: -1856606155, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
+  - {fileID: -790648822, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
   - {fileID: 814126713, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
   - {fileID: -887480039, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
   - {fileID: -1066962898, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
@@ -729,6 +730,7 @@ SpriteAtlas:
   - pacman entity sprites_5
   - pacman entity sprites_4
   - pacman entity sprites_38
+  - pacman entity sprites_89
   - pacman entity sprites_39
   - pacman entity sprites_88
   - pacman entity sprites_58
