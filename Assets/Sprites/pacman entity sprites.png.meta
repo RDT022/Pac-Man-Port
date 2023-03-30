@@ -1994,6 +1994,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: pacman entity sprites_90
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79b4bb55e9cde34e880bec51c39c186
+      internalID: -689138464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pacman entity sprites_91
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f2040744714994493097f3843f7630
+      internalID: -737363909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2026,6 +2068,7 @@ TextureImporter:
       pacman entity sprites_8: -944364017
       pacman entity sprites_45: -2042430230
       pacman entity sprites_47: 1581389889
+      pacman entity sprites_90: -689138464
       pacman entity sprites_5: 503076923
       pacman entity sprites_59: -628099679
       pacman entity sprites_12: 378819199
@@ -2056,6 +2099,7 @@ TextureImporter:
       pacman entity sprites_55: -833257822
       pacman entity sprites_44: -218866748
       pacman entity sprites_46: 882521530
+      pacman entity sprites_91: -737363909
       pacman entity sprites_24: 1089756026
       pacman entity sprites_25: -1396269342
       pacman entity sprites_39: 814126713

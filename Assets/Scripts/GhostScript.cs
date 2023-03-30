@@ -1,14 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.Animations;
 
 public class GhostScript : MonoBehaviour
 {
     bool eaten;
 
+    public bool isEnabled = false;
+
     public bool vulnerable;
 
-    public string movementDirection = "left";
+    public MovementDirections movementDirection = MovementDirections.Left;
+
+    float movementSpeed = 5;
 
     float horizMovement;
 
@@ -29,33 +34,33 @@ public class GhostScript : MonoBehaviour
     int[] pointValues;
 
     [SerializeField]
-    Sprite eatableSprite;
+    AnimatorController RegularAnims;
 
     [SerializeField]
-    Sprite baseSprite;
+    AnimatorController VulnerableAnims;
 
-    [SerializeField]
-    GameManager gm;
-
+    public Animator animator;
 
     void Start()
     {
         startingPos = this.gameObject.transform.position;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
-        ReadDirection();
-        if (!eaten)
+        
+        if (isEnabled && !eaten)
         {
-            if(!vulnerable)
+            if (!vulnerable)
             {
-                sr.sprite = baseSprite;
+                animator.runtimeAnimatorController = RegularAnims;
             }
             else
             {
-                sr.sprite = eatableSprite;
+                animator.runtimeAnimatorController = VulnerableAnims;
             }
+            ReadDirection();
             rb.velocity = new Vector3(horizMovement, vertMovement, 0);
         }
         else
@@ -67,51 +72,66 @@ public class GhostScript : MonoBehaviour
 
     void ReadDirection()
     {
-        if (movementDirection == "left")
+        switch (movementDirection)
         {
-            horizMovement = -5;
-            vertMovement = 0;
-        }
-        if (movementDirection == "right")
-        {
-            horizMovement = 5;
-            vertMovement = 0;
-        }
-        if (movementDirection == "up")
-        {
-            horizMovement = 0;
-            vertMovement = 5;
-        }
-        if (movementDirection == "down")
-        {
-            horizMovement = 0;
-            vertMovement = -5;
+            case MovementDirections.Left:
+                horizMovement = -movementSpeed;
+                vertMovement = 0;
+                animator.SetInteger("MovementDirection", 4);
+                break;
+            case MovementDirections.Right:
+                horizMovement = movementSpeed;
+                vertMovement = 0;
+                animator.SetInteger("MovementDirection", 2);
+                break;
+            case MovementDirections.Up:
+                horizMovement = 0;
+                vertMovement = movementSpeed;
+                animator.SetInteger("MovementDirection", 1);
+                break;
+            default:
+                horizMovement = 0;
+                vertMovement = -movementSpeed;
+                animator.SetInteger("MovementDirection", 3);
+                break;
         }
     }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.tag == "Player")
+        if (collider.tag == "Player")
         {
             PlayerScript player = collider.gameObject.GetComponent<PlayerScript>();
             if (!vulnerable && !eaten)
             {
                 player.Die();
             }
-            else
+            else if (!eaten)
             {
                 eaten = true;
-                gm.Score += pointValues[player.ghostCounter];
+                GameManager.instance.Score += pointValues[player.ghostCounter];
+                animator.runtimeAnimatorController = null;
                 sr.sprite = pointSprites[player.ghostCounter];
                 player.ghostCounter++;
             }
         }
     }
 
-    void Reset()
+    public void turnTransparent()
+    {
+        sr.color = new Color(1, 1, 1, 0);
+    }
+
+    public void Reset()
     {
         this.gameObject.transform.position = startingPos;
         eaten = false;
         vulnerable = false;
+        sr.color = new Color(1, 1, 1, 1);
+    }
+
+    public void amplifySpeed(int increase)
+    {
+        movementSpeed += increase;
     }
 }

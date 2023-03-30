@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 50
   m_Sprite: {fileID: 1650269868, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
-  m_Color: {r: 1, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -149,6 +149,7 @@ MonoBehaviour:
   pointValue: 100
   gm: {fileID: 0}
   sr: {fileID: 1555301637100133142}
+  baseSprite: {fileID: 1650269868, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
   altSprite: {fileID: 1945148344, guid: a9c7f3dea7058f74589dff810ba08463, type: 3}
-  movementDirection: left
+  movementDirection: 2
   rb: {fileID: 836443334737522804}

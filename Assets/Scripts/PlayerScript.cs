@@ -7,11 +7,17 @@ public class PlayerScript : MonoBehaviour
     [SerializeField]
     Rigidbody2D rb;
 
+    Animator animator;
+
+    public bool isEnabled = false;
+
+    public int lives = 2;
+
     public bool poweredUp = false;
 
     bool canMove = true;
 
-    public string movementDirection = "left";
+    public MovementDirections movementDirection = MovementDirections.Left;
 
     float horizMovement;
 
@@ -21,69 +27,74 @@ public class PlayerScript : MonoBehaviour
 
     public int ghostCounter = 0;
 
-    [SerializeField]
-    GameManager gm;
-
     void Start()
     {
-        transform.position = new Vector3(17, -17.5f , 0);
+        transform.position = new Vector3(17, -17.5f, 0);
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        float horiz = Input.GetAxis("Horizontal");
-        float vert = Input.GetAxis("Vertical");
+        if (isEnabled)
+        {
+            float horiz = Input.GetAxis("Horizontal");
+            float vert = Input.GetAxis("Vertical");
 
-        if (horiz > 0 && movementDirection == "left")
-        {
-            movementDirection = "right";
-        }
-        else if (horiz < 0 && movementDirection == "right")
-        {
-            movementDirection = "left";
-        }
-        if (vert > 0 && movementDirection == "down")
-        {
-            movementDirection = "up";
-        }
-        else if (vert < 0 && movementDirection == "up")
-        {
-            movementDirection = "down";
-        }
-        ReadDirection();
-        if (canMove)
-        {
-            rb.velocity = new Vector3(horizMovement, vertMovement, 0);
-        }
-        if (momentumModifier != 7)
-        {
-            Invoke("ResetMomentum", 0.1f);
+            if (horiz > 0 && movementDirection == MovementDirections.Left)
+            {
+                movementDirection = MovementDirections.Right;
+            }
+            else if (horiz < 0 && movementDirection == MovementDirections.Right)
+            {
+                movementDirection = MovementDirections.Left;
+            }
+            if (vert > 0 && movementDirection == MovementDirections.Down)
+            {
+                movementDirection = MovementDirections.Up;
+            }
+            else if (vert < 0 && movementDirection == MovementDirections.Up)
+            {
+                movementDirection = MovementDirections.Down;
+            }
+            ReadDirection();
+            if (canMove)
+            {
+                rb.velocity = new Vector3(horizMovement, vertMovement, 0);
+            }
+            if (momentumModifier != 7)
+            {
+                Invoke("ResetMomentum", 0.1f);
+            }
         }
     }
 
     void ReadDirection()
     {
-        if(movementDirection == "left")
+        switch (movementDirection)
         {
-            horizMovement = -momentumModifier;
-            vertMovement = 0;
+            case MovementDirections.Left:
+                animator.SetInteger("MoveDirection", 4);
+                horizMovement = -momentumModifier;
+                vertMovement = 0;
+                break;
+            case MovementDirections.Right:
+                animator.SetInteger("MoveDirection", 2);
+                horizMovement = momentumModifier;
+                vertMovement = 0;
+                break;
+            case MovementDirections.Up:
+                animator.SetInteger("MoveDirection", 1);
+                horizMovement = 0;
+                vertMovement = momentumModifier;
+                break;
+            default:
+                animator.SetInteger("MoveDirection", 3);
+                horizMovement = 0;
+                vertMovement = -momentumModifier;
+                break;
         }
-        if(movementDirection == "right")
-        { 
-            horizMovement = momentumModifier;
-            vertMovement = 0;
-        }
-        if (movementDirection == "up")
-        {
-            horizMovement = 0;
-            vertMovement = momentumModifier;
-        }
-        if (movementDirection == "down")
-        {
-            horizMovement = 0;
-            vertMovement = -momentumModifier;
-        }
+
     }
 
     public void SetMomentum(float f)
@@ -98,6 +109,19 @@ public class PlayerScript : MonoBehaviour
 
     public void Die()
     {
-        gm.LoadScene("Scene 1");
+        lives--;
+        ghostCounter = 0;
+        poweredUp = false;
+        GameManager.instance.FreezeGameplay();
+        animator.SetBool("Dead", true);
+        StartCoroutine(DeathAnim());
+    }
+
+    IEnumerator DeathAnim()
+    {
+        yield return new WaitForSeconds(3);
+        GameManager.instance.ResetLevel();
+        animator.SetBool("Dead", false);
+        animator.SetInteger("MoveDirection", 0);
     }
 }

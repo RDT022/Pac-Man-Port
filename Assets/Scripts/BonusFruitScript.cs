@@ -8,11 +8,15 @@ public class BonusFruitScript : Collectible
     SpriteRenderer sr;
 
     [SerializeField]
+    Sprite baseSprite;
+    [SerializeField]
     Sprite altSprite;
 
     bool collected = false;
 
-    public string movementDirection = "left";
+    public MovementDirections movementDirection = MovementDirections.Left;
+
+    float movementSpeed = 5;
 
     float horizMovement;
 
@@ -21,19 +25,21 @@ public class BonusFruitScript : Collectible
     [SerializeField]
     Rigidbody2D rb;
 
+    Vector3 despawnPos;
+
     void Start()
     {
-        gm = (GameManager)FindObjectOfType(typeof(GameManager));
+        despawnPos = this.transform.position;
+        this.enabled = false;
     }
 
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.tag == "Player")
+        if (collider.tag == "Player" && !collected)
         {
-            gm.Score += pointValue;
+            GameManager.instance.Score += pointValue;
             sr.sprite = altSprite;
             collected = true;
-            gm.bonusFruitSpawned = false;
             Invoke("Despawn", 2);
         }
     }
@@ -53,30 +59,34 @@ public class BonusFruitScript : Collectible
 
     void ReadDirection()
     {
-        if (movementDirection == "left")
+        switch (movementDirection)
         {
-            horizMovement = -5;
-            vertMovement = 0;
-        }
-        if (movementDirection == "right")
-        {
-            horizMovement = 5;
-            vertMovement = 0;
-        }
-        if (movementDirection == "up")
-        {
-            horizMovement = 0;
-            vertMovement = 5;
-        }
-        if (movementDirection == "down")
-        {
-            horizMovement = 0;
-            vertMovement = -5;
+            case MovementDirections.Left:
+                horizMovement = -movementSpeed;
+                vertMovement = 0;
+                break;
+            case MovementDirections.Right:
+                horizMovement = movementSpeed;
+                vertMovement = 0;
+                break;
+            case MovementDirections.Up:
+                horizMovement = 0;
+                vertMovement = movementSpeed;
+                break;
+            default:
+                horizMovement = 0;
+                vertMovement = -movementSpeed;
+                break;
         }
     }
 
-    void Despawn()
+    public void Despawn()
     {
-        Destroy(gameObject);
+        GameManager.instance.bonusFruitSpawned = false;
+        this.enabled = false;
+        this.transform.position = despawnPos;
+        sr.sprite = baseSprite;
+        movementDirection = MovementDirections.Left;
+        collected = false;
     }
 }

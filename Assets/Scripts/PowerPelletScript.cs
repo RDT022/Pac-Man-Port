@@ -6,19 +6,19 @@ public class PowerPelletScript : Collectible
 {
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        if(collider.tag == "Player")
+        if (collider.tag == "Player")
         {
-            gm.Score += pointValue;
+            GameManager.instance.Score += pointValue;
             collider.gameObject.GetComponent<PlayerScript>().poweredUp = true;
-            int index = gm.pellets.IndexOf(this.gameObject);
-            gm.pellets.RemoveAt(index);
+            int index = GameManager.instance.pellets.IndexOf(this.gameObject);
+            GameManager.instance.pellets.RemoveAt(index);
             Destroy(gameObject);
         }
-        if(collider.tag == "Bonus Fruit")
+        if (collider.tag == "Bonus Fruit")
         {
-            Destroy(collider.gameObject);
-            int index = gm.pellets.IndexOf(this.gameObject);
-            gm.pellets.RemoveAt(index);
+            collider.gameObject.GetComponent<BonusFruitScript>().Despawn();
+            int index = GameManager.instance.pellets.IndexOf(this.gameObject);
+            GameManager.instance.pellets.RemoveAt(index);
             Destroy(gameObject);
         }
     }

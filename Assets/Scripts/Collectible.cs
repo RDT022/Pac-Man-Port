@@ -6,8 +6,6 @@ abstract public class Collectible : MonoBehaviour
 {
     public int pointValue;
 
-    public GameManager gm;
-
-    public abstract void OnTriggerEnter2D(Collider2D collider); 
+    public abstract void OnTriggerEnter2D(Collider2D collider);
 
 }
